@@ -14,7 +14,7 @@ store_monitoring/
 │
 ├── data/
 │   ├── store_status.csv    # Store activity status.
-│   ├── business_hours.csv  # Store business hours.
+│   ├── menu_hours.csv  # Store business hours.
 │   ├── timezones.csv       # Store timezone information.
 │
 ├── requirements.txt        # List of dependencies.
