@@ -1,0 +1,165 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#app {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styles */
+button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* Error message */
+#error {
+    color: #d9534f;
+    background: #f8d7da;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    display: none;
+}
+
+#error p {
+    margin: 0;
+}
+
+/* Hidden element */
+.hidden {
+    display: none;
+}
+
+/* Report info section */
+#reportInfo {
+    margin: 20px 0;
+}
+
+#reportInfo p {
+    margin: 5px 0;
+}
+
+/* Summary cards */
+.summary-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.summary-cards div {
+    background: #f4f4f4;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    flex: 1;
+    margin: 0 5px;
+}
+
+.summary-cards div p {
+    margin: 5px 0;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead th {
+    background: #007bff;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+}
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tr:hover {
+    background: #f1f1f1;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.pagination button {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.pagination .active {
+    background: #0056b3;
+    color: #fff;
+}
+
+#pageNumbers {
+    display: flex;
+    gap: 5px;
+}
+
+#pageNumbers button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+#pageNumbers button.active {
+    background: #007bff;
+    color: #fff;
+}
+
+/* Loader spinner */
+.spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

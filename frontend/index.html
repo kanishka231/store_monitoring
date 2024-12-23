@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <div id="app">
+        <button id="generateBtn">Generate New Report</button>
+        <div id="error" class="hidden">
+            <p id="errorText"></p>
+        </div>
+        <div id="reportInfo" class="hidden">
+            <p>Report ID: <span id="reportId"></span></p>
+            <p>Status: <span id="statusText"></span></p>
+        </div>
+        <div id="reportData" class="hidden">
+            <div class="summary-cards">
+                <div>
+                    <p>Last Hour Uptime</p>
+                    <p id="hourUptime">-</p>
+                </div>
+                <div>
+                    <p>Last Hour Downtime</p>
+                    <p id="hourDowntime">-</p>
+                </div>
+                <div>
+                    <p>Last Day Uptime</p>
+                    <p id="dayUptime">-</p>
+                </div>
+                <div>
+                    <p>Last Day Downtime</p>
+                    <p id="dayDowntime">-</p>
+                </div>
+                <div>
+                    <p>Last Week Uptime</p>
+                    <p id="weekUptime">-</p>
+                </div>
+                <div>
+                    <p>Last Week Downtime</p>
+                    <p id="weekDowntime">-</p>
+                </div>
+            </div>
+            <table>
+                <thead id="tableHeader"></thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+            <div class="pagination">
+                <button id="prevPage">&laquo; Previous</button>
+                <span id="startEntry">0</span> to <span id="endEntry">0</span> of <span id="totalEntries">0</span>
+                <button id="nextPage">Next &raquo;</button>
+                <div id="pageNumbers"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

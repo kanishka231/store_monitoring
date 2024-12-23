@@ -66,4 +66,3 @@ if __name__ == "__main__":
 def close_connection():
     cursor.close()
     connection.close()
-
